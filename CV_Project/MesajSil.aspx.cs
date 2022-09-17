@@ -7,14 +7,16 @@ using System.Web.UI.WebControls;
 
 namespace CV_Project
 {
-    public partial class Iletisim : System.Web.UI.Page
+    public partial class MesajSil : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
             CVEntityEntities db = new CVEntityEntities();
-            var mesajlar = db.TBLILETISIM.ToList();
-            Repeater1.DataSource = mesajlar;
-            Repeater1.DataBind();
+            int id = Convert.ToInt32(Request.QueryString["ID"]);
+            var iletisim = db.TBLILETISIM.Find(id);
+            db.TBLILETISIM.Remove(iletisim);
+            db.SaveChanges();
+            Response.Redirect("Iletisim.aspx");
         }
     }
 }

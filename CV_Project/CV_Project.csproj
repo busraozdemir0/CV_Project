@@ -89,6 +89,8 @@
     <Content Include="Default.aspx" />
     <Content Include="Deneyimler.aspx" />
     <Content Include="Iletisim.aspx" />
+    <Content Include="MesajDetay.aspx" />
+    <Content Include="MesajSil.aspx" />
     <Content Include="Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Model1.Context.cs</LastGenOutput>
@@ -132,6 +134,20 @@
     </Compile>
     <Compile Include="Iletisim.aspx.designer.cs">
       <DependentUpon>Iletisim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MesajDetay.aspx.cs">
+      <DependentUpon>MesajDetay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MesajDetay.aspx.designer.cs">
+      <DependentUpon>MesajDetay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MesajSil.aspx.cs">
+      <DependentUpon>MesajSil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MesajSil.aspx.designer.cs">
+      <DependentUpon>MesajSil.aspx</DependentUpon>
     </Compile>
     <Compile Include="Model1.Context.cs">
       <AutoGen>True</AutoGen>
