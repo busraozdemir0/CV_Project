@@ -36,8 +36,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <div class="sidenav text-center">
         <div class="side_top">
             <img src="CvWeb/images/about.jpg" alt="news image" class="img-fluid navimg">
-            <h1 class="top_hd mt-2"><a href="index.html">Conjoint</a></h1>
-            <p class="top_hdp mt-2">Fermentum lobortis non tristique ante proin sociis</p>
+            <asp:Repeater ID="Repeater9" runat="server">
+                <ItemTemplate>
+                    <h1 class="top_hd mt-2"><a href="#about"><%# Eval("BILGILER") %></a></h1>
+                </ItemTemplate>
+            </asp:Repeater>
+
+            <asp:Repeater ID="Repeater10" runat="server">
+                <ItemTemplate>
+                    <p class="top_hdp mt-2"><%# Eval("OKUL") %></p>
+                </ItemTemplate>
+            </asp:Repeater>
         </div>
         <!-- header -->
         <header>
@@ -165,27 +174,28 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             </asp:TextBox>
                         </div>
                         <div class="col-sm-6">
-                           <asp:TextBox ID="TextBox2" runat="server" placeholder="Mail Adresi">
+                            <asp:TextBox ID="TextBox2" runat="server" placeholder="Mail Adresi">
 
                             </asp:TextBox>
                         </div>
                     </div>
                     <asp:TextBox ID="TextBox3" runat="server" placeholder="Konu">
 
-                            </asp:TextBox>
+                    </asp:TextBox>
                     <asp:TextBox ID="TextBox4" runat="server" placeholder="Mesaj" TextMode="MultiLine" Height="50">
 
                     </asp:TextBox>
 
-                    <asp:Button ID="Button1" runat="server" CssClass="btn btn-info" Text="Gönder" />
-                    <asp:Button ID="Button2" runat="server" CssClass="btn btn-warning" Text="Vazgeç" />
-                    
+                    <asp:Button ID="Button1" runat="server" CssClass="btn btn-info" Text="Gönder" OnClick="Button1_Click" />
+
+                    <asp:Button ID="Button2" runat="server" CssClass="btn btn-warning" Text="Vazgeç" OnClick="Button2_Click" />
+
                     <div class="clearfix"></div>
                 </form>
             </div>
             <div class="cpy-right text-center">
                 <p>
-                    © @DateTime.Now.Year DinamikCV. Tüm Hakları Saklıdır. | Design by
+                    ©2022 DinamikCV. Tüm Hakları Saklıdır. | Design by
 					<a href="http://w3layouts.com">W3layouts.</a>
                 </p>
             </div>

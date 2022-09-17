@@ -15,6 +15,24 @@ namespace CV_Project
     {
 
         /// <summary>
+        /// Repeater9 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater Repeater9;
+
+        /// <summary>
+        /// Repeater10 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater Repeater10;
+
+        /// <summary>
         /// Repeater1 control.
         /// </summary>
         /// <remarks>

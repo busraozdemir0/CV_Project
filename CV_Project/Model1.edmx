@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="CVEntityModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="CVEntityModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="TBLADRES">
           <Key>
             <PropertyRef Name="ID" />
@@ -30,6 +30,7 @@
           <Property Name="BILGILER" Type="varchar" MaxLength="500" />
           <Property Name="EGITIM" Type="varchar" MaxLength="500" />
           <Property Name="ISDENEYIMLERI" Type="varchar" MaxLength="1000" />
+          <Property Name="OKUL" Type="varchar" MaxLength="500" />
         </EntityType>
         <EntityType Name="TBLILETISIM">
           <Key>
@@ -39,6 +40,7 @@
           <Property Name="ADSOYAD" Type="varchar" MaxLength="50" />
           <Property Name="MAIL" Type="varchar" MaxLength="50" />
           <Property Name="MESAJ" Type="varchar" MaxLength="500" />
+          <Property Name="KONU" Type="varchar" MaxLength="50" />
         </EntityType>
         <EntityType Name="TBLYETENEKLER">
           <Key>
@@ -55,8 +57,7 @@
           <EntitySet Name="TBLILETISIM" EntityType="Self.TBLILETISIM" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TBLYETENEKLER" EntityType="Self.TBLYETENEKLER" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="CVEntityModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -85,6 +86,7 @@
           <Property Name="BILGILER" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
           <Property Name="EGITIM" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
           <Property Name="ISDENEYIMLERI" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="OKUL" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="TBLILETISIM">
           <Key>
@@ -94,6 +96,7 @@
           <Property Name="ADSOYAD" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="MAIL" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="MESAJ" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="KONU" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="TBLYETENEKLER">
           <Key>
@@ -138,6 +141,7 @@
           <EntitySetMapping Name="TBLHAKKIMDA">
             <EntityTypeMapping TypeName="CVEntityModel.TBLHAKKIMDA">
               <MappingFragment StoreEntitySet="TBLHAKKIMDA">
+                <ScalarProperty Name="OKUL" ColumnName="OKUL" />
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="BILGILER" ColumnName="BILGILER" />
                 <ScalarProperty Name="EGITIM" ColumnName="EGITIM" />
@@ -148,6 +152,7 @@
           <EntitySetMapping Name="TBLILETISIM">
             <EntityTypeMapping TypeName="CVEntityModel.TBLILETISIM">
               <MappingFragment StoreEntitySet="TBLILETISIM">
+                <ScalarProperty Name="KONU" ColumnName="KONU" />
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="ADSOYAD" ColumnName="ADSOYAD" />
                 <ScalarProperty Name="MAIL" ColumnName="MAIL" />

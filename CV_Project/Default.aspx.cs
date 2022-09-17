@@ -28,6 +28,31 @@ namespace CV_Project
             Repeater7.DataBind();
             Repeater8.DataSource = db.TBLADRES.ToList();
             Repeater8.DataBind();
+            Repeater9.DataSource = db.TBLHAKKIMDA.ToList();
+            Repeater9.DataBind();
+            Repeater10.DataSource = db.TBLHAKKIMDA.ToList();
+            Repeater10.DataBind();
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            TBLILETISIM t = new TBLILETISIM();
+            t.ADSOYAD = TextBox1.Text;
+            t.MAIL = TextBox2.Text;
+            t.KONU = TextBox3.Text;
+            t.MESAJ = TextBox4.Text;
+            db.TBLILETISIM.Add(t);
+            db.SaveChanges();
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            TBLILETISIM t = new TBLILETISIM();
+            t.ADSOYAD = " ";
+            t.MAIL = " ";
+            t.KONU = " ";
+            t.MESAJ = " ";
+
         }
     }
 }
