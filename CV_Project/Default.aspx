@@ -185,7 +185,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             </div>
             <div class="cpy-right text-center">
                 <p>
-                    © 2018 Conjoint. All rights reserved | Design by
+                    © @DateTime.Now.Year DinamikCV. Tüm Hakları Saklıdır. | Design by
 					<a href="http://w3layouts.com">W3layouts.</a>
                 </p>
             </div>
