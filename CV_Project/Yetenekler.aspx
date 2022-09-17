@@ -6,7 +6,7 @@
 
     <div class="container">
         <table class="table table-hover" style="margin-left: 20px; margin-right: 20px">
-            <tr>
+            <tr class="success">
                 <th hidden>ID</th>
                 <th>Yetenek</th>
                 <th>Sil</th>
@@ -17,8 +17,11 @@
                     <tr>
                         <td hidden><%# Eval("ID") %></td>
                         <td><%# Eval("YETENEK") %></td>
-                        <td><a href="#" class="btn btn-danger">Sil</a></td>
-                        <td><a href="#" class="btn btn-success">Güncelle</a></td>
+
+                        <td><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='<%# "YetenekSil.aspx?ID="+Eval("ID") %>' CssClass="btn btn-danger">Sil</asp:HyperLink></td>
+                        
+                        <td><asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl='<%# "YetenekGuncelle.aspx?ID="+Eval("ID") %>' CssClass="btn btn-success">Güncelle</asp:HyperLink></td>
+                        
                     </tr>
                 </ItemTemplate>
             </asp:Repeater>

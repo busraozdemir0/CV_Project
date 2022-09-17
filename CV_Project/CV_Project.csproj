@@ -88,6 +88,7 @@
     <Content Include="CvWeb\w3layouts-License.txt" />
     <Content Include="Default.aspx" />
     <Content Include="Deneyimler.aspx" />
+    <Content Include="Iletisim.aspx" />
     <Content Include="Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Model1.Context.cs</LastGenOutput>
@@ -100,7 +101,9 @@
     </Content>
     <Content Include="Web.config" />
     <Content Include="YeniYetenek.aspx" />
+    <Content Include="YetenekGuncelle.aspx" />
     <Content Include="Yetenekler.aspx" />
+    <Content Include="YetenekSil.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Admin.Master.cs">
@@ -122,6 +125,13 @@
     </Compile>
     <Compile Include="Deneyimler.aspx.designer.cs">
       <DependentUpon>Deneyimler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Iletisim.aspx.cs">
+      <DependentUpon>Iletisim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Iletisim.aspx.designer.cs">
+      <DependentUpon>Iletisim.aspx</DependentUpon>
     </Compile>
     <Compile Include="Model1.Context.cs">
       <AutoGen>True</AutoGen>
@@ -161,12 +171,26 @@
     <Compile Include="YeniYetenek.aspx.designer.cs">
       <DependentUpon>YeniYetenek.aspx</DependentUpon>
     </Compile>
+    <Compile Include="YetenekGuncelle.aspx.cs">
+      <DependentUpon>YetenekGuncelle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YetenekGuncelle.aspx.designer.cs">
+      <DependentUpon>YetenekGuncelle.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Yetenekler.aspx.cs">
       <DependentUpon>Yetenekler.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Yetenekler.aspx.designer.cs">
       <DependentUpon>Yetenekler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="YetenekSil.aspx.cs">
+      <DependentUpon>YetenekSil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YetenekSil.aspx.designer.cs">
+      <DependentUpon>YetenekSil.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
