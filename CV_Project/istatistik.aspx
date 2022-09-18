@@ -38,6 +38,7 @@
     });
 </script>
 <div class="list_of_members">
+   
     <div class="sales">
         <div class="icon">
             <i class="dollar"></i>
@@ -83,7 +84,7 @@
 </div>
 
 
-
+ <asp:Label ID="Label5" runat="server" Text="Label"></asp:Label>
 <div class="total-world">
     <div class="world-map">
         <div class="alert-close6"> </div>

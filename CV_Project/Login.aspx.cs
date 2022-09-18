@@ -18,13 +18,15 @@ namespace CV_Project
         protected void Button1_Click(object sender, EventArgs e)
         {
             var sorgu = from x in db.TBLADMIN where x.KULLANICIAD == TextBox1.Text && x.SIFRE == TextBox2.Text select x;
-            if(sorgu.Any()) //eğer sorgunun içerisinde bir şey varsa textboxlardan gelen değerler eşleştirebiliyorsa Any içerisinde bir şey olacaktır
+            if(sorgu.Any()) //Tanımlanan int türündeki dizideki değerlerin belirlenen koşullara göre koleksiyonda olup olmadığı kontrol edilir. Koşula uygun değer var ise True, yok ise False sonucu döner.
             {
+                Session["control"] = TextBox1.Text;
                 Response.Redirect("istatistik.aspx");
             }
             else
             {
-                Response.Write("Hatalı Kullanıcı Adı ya da Şifre girdiniz.");
+                Label1.Text = "Hatalı Kullanıcı Adı ya da Şifre girdiniz.";
+                //Response.Write("Hatalı Kullanıcı Adı ya da Şifre girdiniz.");
             }
         }
     }

@@ -30,7 +30,9 @@
                     <li><a href="Iletisim.aspx">İletişim</a></li>
 
                 </ul>
-            </div>
+                <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click" Font-Size="Medium" CssClass="navbar-right">Çıkış</asp:LinkButton>
+                </div>
+            
         </nav>
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">

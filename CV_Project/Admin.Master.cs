@@ -11,7 +11,16 @@ namespace CV_Project
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+           if(Session["control"]==null) //control isimli değişken yoksa kullanıcıyı Login sayfasına yönlendir
+            {
+                Response.Redirect("Login.aspx");
+            }
+        }
 
+        protected void LinkButton1_Click(object sender, EventArgs e)
+        {
+            Session.Abandon();
+            Response.Redirect("Login.aspx");
         }
     }
 }

@@ -57,15 +57,16 @@
 					<div class="flex-sb-m w-full p-b-30">
 						<div class="contact100-form-checkbox">
 							<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
-							<label class="label-checkbox100" for="ckb1">
+							<%--<label class="label-checkbox100" for="ckb1">
 								Beni Hatırla
-							</label>
+							</label>--%>
 						</div>
 
 						<div>
-							<a href="#" class="txt1">
+							<asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+							<%--<a href="#" class="txt1">
 								Şifremi Unuttum
-							</a>
+							</a>--%>
 						</div>
 					</div>
 

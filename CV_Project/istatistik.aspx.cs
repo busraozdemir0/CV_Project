@@ -12,6 +12,8 @@ namespace CV_Project
         CVEntityEntities db = new CVEntityEntities();
         protected void Page_Load(object sender, EventArgs e)
         {
+            Label5.Text = " ~~~ Hoşgeldin " + Session["control"]+ " ~~~";
+
             Label1.Text = db.TBLYETENEKLER.Count().ToString();
             Label2.Text = db.TBLILETISIM.Count().ToString();
             Label3.Text = db.TBLYETENEKLER.Average(x => x.DERECE).ToString();
