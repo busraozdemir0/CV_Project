@@ -30,5 +30,6 @@ namespace CV_Project
         public virtual DbSet<TBLHAKKIMDA> TBLHAKKIMDA { get; set; }
         public virtual DbSet<TBLILETISIM> TBLILETISIM { get; set; }
         public virtual DbSet<TBLYETENEKLER> TBLYETENEKLER { get; set; }
+        public virtual DbSet<TBLADMIN> TBLADMIN { get; set; }
     }
 }

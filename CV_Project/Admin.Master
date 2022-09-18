@@ -19,13 +19,16 @@
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="#">Dinamik CV Sitesi</a>
+                    <a class="navbar-brand" href="Default.aspx">Dinamik CV Sitesi</a>
                 </div>
                 <ul class="nav navbar-nav">
+                    <li><a href="istatistik.aspx">İstatistikler</a></li>
+                    <li><a href="Default.aspx">Anasayfa</a></li>
                     <li><a href="#">Eğitim Hayatı</a></li>
                     <li><a href="Yetenekler.aspx">Yetenekler</a></li>
                     <li><a href="#">Deneyimler</a></li>
                     <li><a href="Iletisim.aspx">İletişim</a></li>
+
                 </ul>
             </div>
         </nav>
