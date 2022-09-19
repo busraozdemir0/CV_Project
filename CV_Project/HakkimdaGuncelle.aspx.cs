@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace CV_Project
 {
-    public partial class YetenekGuncelle : System.Web.UI.Page
+    public partial class HakkimdaGuncelle : System.Web.UI.Page
     {
         CVEntityEntities db = new CVEntityEntities();
         protected void Page_Load(object sender, EventArgs e)
@@ -15,20 +15,25 @@ namespace CV_Project
             int id = int.Parse(Request.QueryString["ID"]);
             if (Page.IsPostBack == false)
             {
-                var deger = db.TBLYETENEKLER.Find(id);
-                TextBox1.Text = deger.YETENEK;
-                TextBox2.Text =Convert.ToString(deger.DERECE);
+                var deger = db.TBLHAKKIMDA.Find(id);
+                Txtadsoyad.Text = deger.ADSOYAD;
+                Txtegitim.Text = deger.EGITIM;
+                Txtisdeneyim.Text = deger.ISDENEYIMLERI;
+                Txtokul.Text = deger.OKUL;
+
             }
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
             int id = int.Parse(Request.QueryString["ID"]);
-            var deger = db.TBLYETENEKLER.Find(id);
-            deger.YETENEK = TextBox1.Text;
-            deger.DERECE = Convert.ToByte(TextBox2.Text);
+            var deger = db.TBLHAKKIMDA.Find(id);
+            deger.ADSOYAD = Txtadsoyad.Text;
+            deger.EGITIM = Txtegitim.Text;
+            deger.ISDENEYIMLERI = Txtisdeneyim.Text;
+            deger.OKUL = Txtokul.Text;
             db.SaveChanges();
-            Response.Redirect("Yetenekler.aspx");
+            Response.Redirect("Hakkimda.aspx");
         }
     }
 }

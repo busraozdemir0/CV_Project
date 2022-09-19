@@ -12,10 +12,12 @@ namespace CV_Project
     using System;
     using System.Collections.Generic;
     
-    public partial class TBLADMIN
+    public partial class TBLKULLANİCİ
     {
         public int ID { get; set; }
+        public string ADSOYAD { get; set; }
         public string KULLANICIAD { get; set; }
+        public string MAIL { get; set; }
         public string SIFRE { get; set; }
     }
 }

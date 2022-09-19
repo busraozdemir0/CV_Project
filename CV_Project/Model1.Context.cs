@@ -27,9 +27,9 @@ namespace CV_Project
     
         public virtual DbSet<TBLADRES> TBLADRES { get; set; }
         public virtual DbSet<TBLCALISMALARIM> TBLCALISMALARIM { get; set; }
-        public virtual DbSet<TBLHAKKIMDA> TBLHAKKIMDA { get; set; }
         public virtual DbSet<TBLILETISIM> TBLILETISIM { get; set; }
         public virtual DbSet<TBLYETENEKLER> TBLYETENEKLER { get; set; }
-        public virtual DbSet<TBLADMIN> TBLADMIN { get; set; }
+        public virtual DbSet<TBLKULLANİCİ> TBLKULLANİCİ { get; set; }
+        public virtual DbSet<TBLHAKKIMDA> TBLHAKKIMDA { get; set; }
     }
 }

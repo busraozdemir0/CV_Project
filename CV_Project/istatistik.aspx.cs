@@ -12,11 +12,11 @@ namespace CV_Project
         CVEntityEntities db = new CVEntityEntities();
         protected void Page_Load(object sender, EventArgs e)
         {
-            Label5.Text = " ~~~ Hoşgeldin " + Session["control"]+ " ~~~";
+            Label5.Text = " ~ Hoşgeldin " + Session["control"]+ " ~";
 
             Label1.Text = db.TBLYETENEKLER.Count().ToString();
             Label2.Text = db.TBLILETISIM.Count().ToString();
-            Label3.Text = db.TBLYETENEKLER.Average(x => x.DERECE).ToString();
+            Label3.Text = db.TBLYETENEKLER.Average(x => x.DERECE).ToString().Substring(0,5);
             Label4.Text = db.TBLYETENEKLER.Max(x => x.DERECE).ToString();
         }
     }

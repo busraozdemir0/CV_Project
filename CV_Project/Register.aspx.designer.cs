@@ -11,8 +11,17 @@ namespace CV_Project
 {
 
 
-    public partial class Login1
+    public partial class Register
     {
+
+        /// <summary>
+        /// Txtadsoyad control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Txtadsoyad;
 
         /// <summary>
         /// Txtkullaniciadi control.
@@ -22,6 +31,15 @@ namespace CV_Project
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox Txtkullaniciadi;
+
+        /// <summary>
+        /// Txtmail control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Txtmail;
 
         /// <summary>
         /// Txtsifre control.

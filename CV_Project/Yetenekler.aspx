@@ -9,6 +9,7 @@
             <tr class="success">
                 <th hidden>ID</th>
                 <th>Yetenek</th>
+                <th>Derece</th>
                 <th>Sil</th>
                 <th>Güncelle</th>
             </tr>
@@ -17,6 +18,7 @@
                     <tr>
                         <td hidden><%# Eval("ID") %></td>
                         <td><%# Eval("YETENEK") %></td>
+                        <td><%# Eval("DERECE") %></td>
 
                         <td><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='<%# "YetenekSil.aspx?ID="+Eval("ID") %>' CssClass="btn btn-danger">Sil</asp:HyperLink></td>
                         

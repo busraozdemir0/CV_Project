@@ -17,10 +17,10 @@ namespace CV_Project
         CVEntityEntities db = new CVEntityEntities();
         protected void Button1_Click(object sender, EventArgs e)
         {
-            var sorgu = from x in db.TBLADMIN where x.KULLANICIAD == TextBox1.Text && x.SIFRE == TextBox2.Text select x;
+            var sorgu = from x in db.TBLKULLANİCİ where x.KULLANICIAD == Txtkullaniciadi.Text && x.SIFRE == Txtsifre.Text select x;
             if(sorgu.Any()) //Tanımlanan int türündeki dizideki değerlerin belirlenen koşullara göre koleksiyonda olup olmadığı kontrol edilir. Koşula uygun değer var ise True, yok ise False sonucu döner.
             {
-                Session["control"] = TextBox1.Text;
+                Session["control"] = Txtkullaniciadi.Text;
                 Response.Redirect("istatistik.aspx");
             }
             else

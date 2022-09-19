@@ -1,10 +1,9 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="CV_Project.Login1" %>
-
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="CV_Project.Register" %>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Giriş</title>
+	<title>Kayıt Ol</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
@@ -37,14 +36,27 @@
 			<div class="wrap-login100">
 				<div class="login100-form-title" style="background-image: url(Login/images/bg-01.jpg);">
 					<span class="login100-form-title-1">
-						Dinamik CV Giriş Paneli
+						Dinamik CV Kayıt Ol
 					</span>
 				</div>
 
 				<form class="login100-form validate-form" runat="server">
+
+					<div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
+						<span class="label-input100">Adı Soyadı</span>
+						<asp:TextBox ID="Txtadsoyad" runat="server" class="input100" placeholder="Adınız Soyadınız..."></asp:TextBox>
+						<span class="focus-input100"></span>
+					</div>
+
 					<div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
 						<span class="label-input100">Kullanıcı Adı</span>
 						<asp:TextBox ID="Txtkullaniciadi" runat="server" class="input100" placeholder="Kullanıcı Adınız..."></asp:TextBox>
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
+						<span class="label-input100">E-Mail</span>
+						<asp:TextBox ID="Txtmail" runat="server" class="input100" placeholder="Mailiniz..."></asp:TextBox>
 						<span class="focus-input100"></span>
 					</div>
 
@@ -64,14 +76,14 @@
 
 						<div>
 							<asp:Label ID="Label1" runat="server" Text=""></asp:Label>
-							<p>Hesabınız Yok mu? <a href="Register.aspx" class="txt1">Kayıt Olun</a></p>
+							<p>Hesabınız Var mı? <a href="Login.aspx" class="txt1">Giriş Yapın</a></p>
 							<br />
 						</div>
 					</div>
 
 					<div class="container-login100-form-btn">
 						<br />
-						<asp:Button ID="Button1" runat="server" Text="Giriş Yap" class="login100-form-btn" OnClick="Button1_Click"/>
+						<asp:Button ID="Button1" runat="server" Text="Kayıt Ol" class="login100-form-btn" OnClick="Button1_Click"/>
 					</div>
 				</form>
 			</div>
@@ -97,3 +109,4 @@
 
 </body>
 </html>
+

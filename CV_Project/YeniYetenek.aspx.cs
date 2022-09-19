@@ -18,6 +18,7 @@ namespace CV_Project
         {
             TBLYETENEKLER t = new TBLYETENEKLER();
             t.YETENEK = TextBox1.Text;
+            t.DERECE =Convert.ToByte(TextBox2.Text);
             db.TBLYETENEKLER.Add(t);
             db.SaveChanges();
             Response.Redirect("Yetenekler.aspx");

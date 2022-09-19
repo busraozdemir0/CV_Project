@@ -38,7 +38,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <img src="CvWeb/images/about.jpg" alt="news image" class="img-fluid navimg">
             <asp:Repeater ID="Repeater9" runat="server">
                 <ItemTemplate>
-                    <h1 class="top_hd mt-2"><a href="#about"><%# Eval("BILGILER") %></a></h1>
+                    <h1 class="top_hd mt-2"><a href="#about"><%# Eval("ADSOYAD") %></a></h1>
                 </ItemTemplate>
             </asp:Repeater>
 
@@ -61,7 +61,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         <li class="mt-sm-3"><a href="#news" class="scroll">Deneyimler</a></li>
                         <li class="mt-sm-3"><a href="#contact" class="scroll">İletişim</a></li>
                     </ul>
+                   
                 </nav>
+                <br />
+                <br />
+                <br />
+                 <a href="Login.aspx" class="alert-dark">Giriş Yap</a>
             </div>
         </header>
         <!-- //header -->
@@ -75,7 +80,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <p class="banp mx-auto mt-3">
                         <asp:Repeater ID="Repeater1" runat="server">
                             <ItemTemplate>
-                                <%# Eval("BILGILER") %>
+                                <%# Eval("ADSOYAD") %>
                             </ItemTemplate>
                         </asp:Repeater>
                     </p>
@@ -188,7 +193,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
                     <asp:Button ID="Button1" runat="server" CssClass="btn btn-info" Text="Gönder" OnClick="Button1_Click" />
 
-                    <asp:Button ID="Button2" runat="server" CssClass="btn btn-warning" Text="Vazgeç" OnClick="Button2_Click" />
+                    <asp:Button ID="Button2" runat="server" CssClass="btn btn-gruop" Text="Vazgeç" OnClick="Button2_Click" />
 
                     <div class="clearfix"></div>
                 </form>

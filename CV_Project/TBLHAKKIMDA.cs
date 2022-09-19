@@ -15,7 +15,7 @@ namespace CV_Project
     public partial class TBLHAKKIMDA
     {
         public int ID { get; set; }
-        public string BILGILER { get; set; }
+        public string ADSOYAD { get; set; }
         public string EGITIM { get; set; }
         public string ISDENEYIMLERI { get; set; }
         public string OKUL { get; set; }
