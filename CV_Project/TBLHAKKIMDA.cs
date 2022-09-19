@@ -18,6 +18,7 @@ namespace CV_Project
         public string ADSOYAD { get; set; }
         public string EGITIM { get; set; }
         public string ISDENEYIMLERI { get; set; }
-        public string OKUL { get; set; }
+        public string MESLEK { get; set; }
+        public string GORSELURL { get; set; }
     }
 }

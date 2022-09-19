@@ -32,6 +32,8 @@ namespace CV_Project
             Repeater9.DataBind();
             Repeater10.DataSource = db.TBLHAKKIMDA.ToList();
             Repeater10.DataBind();
+            Repeater11.DataSource = db.TBLHAKKIMDA.ToList();
+            Repeater11.DataBind();
         }
 
         protected void Button1_Click(object sender, EventArgs e)

@@ -35,7 +35,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <body>
     <div class="sidenav text-center">
         <div class="side_top">
-            <img src="CvWeb/images/about.jpg" alt="news image" class="img-fluid navimg">
+             <asp:Repeater ID="Repeater11" runat="server">
+                <ItemTemplate>
+                    <img src="<%# Eval("GORSELURL") %>" alt="news image" style="width:125px; height:145px" class="img-fluid navimg">
+                </ItemTemplate>
+            </asp:Repeater>
+           
             <asp:Repeater ID="Repeater9" runat="server">
                 <ItemTemplate>
                     <h1 class="top_hd mt-2"><a href="#about"><%# Eval("ADSOYAD") %></a></h1>
@@ -44,7 +49,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
             <asp:Repeater ID="Repeater10" runat="server">
                 <ItemTemplate>
-                    <p class="top_hdp mt-2"><%# Eval("OKUL") %></p>
+                    <p class="top_hdp mt-2"><%# Eval("MESLEK") %></p>
                 </ItemTemplate>
             </asp:Repeater>
         </div>

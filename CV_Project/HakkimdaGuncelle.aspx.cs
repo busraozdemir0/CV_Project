@@ -19,7 +19,8 @@ namespace CV_Project
                 Txtadsoyad.Text = deger.ADSOYAD;
                 Txtegitim.Text = deger.EGITIM;
                 Txtisdeneyim.Text = deger.ISDENEYIMLERI;
-                Txtokul.Text = deger.OKUL;
+                Txtmeslek.Text = deger.MESLEK;
+                Txtgorsel.Text = deger.GORSELURL;
 
             }
         }
@@ -31,7 +32,8 @@ namespace CV_Project
             deger.ADSOYAD = Txtadsoyad.Text;
             deger.EGITIM = Txtegitim.Text;
             deger.ISDENEYIMLERI = Txtisdeneyim.Text;
-            deger.OKUL = Txtokul.Text;
+            deger.MESLEK = Txtmeslek.Text;
+            deger.GORSELURL = Txtgorsel.Text;
             db.SaveChanges();
             Response.Redirect("Hakkimda.aspx");
         }

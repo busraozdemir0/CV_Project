@@ -6,11 +6,10 @@
     <edmx:Diagrams>
       <Diagram DiagramId="dac9c0f08d684522b693909ca3717ec4" Name="Diagram1">
         <EntityTypeShape EntityType="CVEntityModel.TBLADRES" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="CVEntityModel.TBLCALISMALARIM" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="CVEntityModel.TBLILETISIM" Width="1.5" PointX="2.75" PointY="3.75" IsExpanded="true" />
         <EntityTypeShape EntityType="CVEntityModel.TBLYETENEKLER" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="CVEntityModel.TBLKULLANİCİ" Width="1.5" PointX="5.125" PointY="3.75" />
-        <EntityTypeShape EntityType="CVEntityModel.TBLHAKKIMDA" Width="1.5" PointX="0.75" PointY="6.75" />
+        <EntityTypeShape EntityType="CVEntityModel.TBLHAKKIMDA" Width="1.5" PointX="0.625" PointY="3.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

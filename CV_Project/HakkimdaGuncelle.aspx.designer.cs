@@ -78,13 +78,31 @@ namespace CV_Project
         protected global::System.Web.UI.WebControls.Label Label4;
 
         /// <summary>
-        /// Txtokul control.
+        /// Txtmeslek control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Txtokul;
+        protected global::System.Web.UI.WebControls.TextBox Txtmeslek;
+
+        /// <summary>
+        /// Label5 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label5;
+
+        /// <summary>
+        /// Txtgorsel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Txtgorsel;
 
         /// <summary>
         /// Button1 control.

@@ -10,7 +10,8 @@
                 <th>Ad Soyad</th>
                 <th>Eğitim</th>
                 <th>İş Deneyimleri</th>
-                <th>Okul</th>
+                <th>Meslek</th>
+                <th>Görsel Url</th>
                 <th>Sil</th>
                 <th>Güncelle</th>
             </tr>
@@ -21,7 +22,8 @@
                         <td><%# Eval("ADSOYAD") %></td>
                         <td><%# Eval("EGITIM") %></td>
                         <td><%# Eval("ISDENEYIMLERI") %></td>
-                        <td><%# Eval("OKUL") %></td>
+                        <td><%# Eval("MESLEK") %></td>
+                        <td><%# Eval("GORSELURL") %></td>
 
                         <td><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='<%# "HakkimdaSil.aspx?ID="+Eval("ID") %>' CssClass="btn btn-danger">Sil</asp:HyperLink></td>
                         

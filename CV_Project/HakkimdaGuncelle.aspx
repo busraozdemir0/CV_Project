@@ -18,12 +18,17 @@
          <br />
          <asp:TextBox ID="Txtisdeneyim" runat="server" CssClass="form-control" placeholder="is deneyimi" Height="100px"></asp:TextBox>   
         <br />
-           <asp:Label ID="Label4" runat="server" Text="Okul"></asp:Label>
+           <asp:Label ID="Label4" runat="server" Text="Meslek"></asp:Label>
          <br />
-        <asp:TextBox ID="Txtokul" runat="server" CssClass="form-control" placeholder="okul" Height="100px"></asp:TextBox>   
+        <asp:TextBox ID="Txtmeslek" runat="server" CssClass="form-control" placeholder="meslek" Height="100px"></asp:TextBox>   
+        <br />
+            <asp:Label ID="Label5" runat="server" Text="Görsel URL"></asp:Label><p>-->Görseli hızlı resim sitesine yükleyip urlsini buraya yapıştırabilirsiniz. </p>
+
+        <asp:TextBox ID="Txtgorsel" runat="server" CssClass="form-control" placeholder="görsel"></asp:TextBox>   
         <br />
         
-        <asp:Button ID="Button1" runat="server" Text="Kaydet" CssClass="btn btn-primary" OnClick="Button1_Click" />
+        <asp:Button ID="Button1" runat="server" Text="Kaydet" CssClass="btn btn-primary" OnClick="Button1_Click" />        
     </div>
+    <br />
 
 </asp:Content>

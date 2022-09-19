@@ -300,9 +300,6 @@
     <Compile Include="TBLADRES.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="TBLCALISMALARIM.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
     <Compile Include="TBLHAKKIMDA.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
