@@ -129,6 +129,7 @@
     <Content Include="Default.aspx" />
     <Content Include="Deneyimler.aspx" />
     <Content Include="Hakkimda.aspx" />
+    <Content Include="HakkimdaEkle.aspx" />
     <Content Include="HakkimdaGuncelle.aspx" />
     <Content Include="HakkimdaSil.aspx" />
     <Content Include="Iletisim.aspx" />
@@ -224,6 +225,13 @@
     </Compile>
     <Compile Include="Hakkimda.aspx.designer.cs">
       <DependentUpon>Hakkimda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HakkimdaEkle.aspx.cs">
+      <DependentUpon>HakkimdaEkle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HakkimdaEkle.aspx.designer.cs">
+      <DependentUpon>HakkimdaEkle.aspx</DependentUpon>
     </Compile>
     <Compile Include="HakkimdaGuncelle.aspx.cs">
       <DependentUpon>HakkimdaGuncelle.aspx</DependentUpon>

@@ -33,6 +33,7 @@
                 </ItemTemplate>
             </asp:Repeater>
         </table>
+        <a href="HakkimdaEkle.aspx" class="btn btn-primary" style="margin-left:20px">Hakkimda Ekle</a>
 
     </div>
 
