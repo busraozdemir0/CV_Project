@@ -75,6 +75,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Adres.aspx" />
+    <Content Include="AdresEkle.aspx" />
+    <Content Include="AdresGuncelle.aspx" />
+    <Content Include="AdresSil.aspx" />
     <Content Include="CvWeb\css\bootstrap.css" />
     <Content Include="CvWeb\css\fontawesome-all.min.css" />
     <Content Include="CvWeb\css\style.css" />
@@ -204,6 +208,34 @@
     </Compile>
     <Compile Include="Admin.Master.designer.cs">
       <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Adres.aspx.cs">
+      <DependentUpon>Adres.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adres.aspx.designer.cs">
+      <DependentUpon>Adres.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdresEkle.aspx.cs">
+      <DependentUpon>AdresEkle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdresEkle.aspx.designer.cs">
+      <DependentUpon>AdresEkle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdresGuncelle.aspx.cs">
+      <DependentUpon>AdresGuncelle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdresGuncelle.aspx.designer.cs">
+      <DependentUpon>AdresGuncelle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdresSil.aspx.cs">
+      <DependentUpon>AdresSil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdresSil.aspx.designer.cs">
+      <DependentUpon>AdresSil.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>

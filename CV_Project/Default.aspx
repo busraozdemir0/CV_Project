@@ -37,7 +37,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="side_top">
              <asp:Repeater ID="Repeater11" runat="server">
                 <ItemTemplate>
-                    <img src="<%# Eval("GORSELURL") %>" alt="news image" style="width:125px; height:145px" class="img-fluid navimg">
+                    <img src="<%# Eval("GORSELURL") %>" alt="profil fotoğrafı" style="width:125px; height:145px" class="img-fluid navimg">
                 </ItemTemplate>
             </asp:Repeater>
            
