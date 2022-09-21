@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -20,7 +21,7 @@ namespace CV_Project
                 Txtegitim.Text = deger.EGITIM;
                 Txtisdeneyim.Text = deger.ISDENEYIMLERI;
                 Txtmeslek.Text = deger.MESLEK;
-                Txtgorsel.Text = deger.GORSELURL;
+                //Txtgorsel.Text = deger.GORSELURL;
 
             }
         }
@@ -29,11 +30,26 @@ namespace CV_Project
         {
             int id = int.Parse(Request.QueryString["ID"]);
             var deger = db.TBLHAKKIMDA.Find(id);
+
+            HttpPostedFile yuklenecekDosya = FileUpload1.PostedFile;
+            if (yuklenecekDosya != null)
+            {
+                FileInfo dosyaBilgisi = new FileInfo(FileUpload1.FileName);
+                string klasor = "Resimler";
+
+                string dosyaAdi = dosyaBilgisi.Name.Substring(0, dosyaBilgisi.Name.Length - dosyaBilgisi.Extension.Length);
+                dosyaAdi += "-" + Guid.NewGuid().ToString().Replace("-", "") + dosyaBilgisi.Extension;
+                string yuklemeYeri = Server.MapPath("~/" + klasor + "/" + dosyaAdi);
+                FileUpload1.SaveAs(yuklemeYeri);
+
+                string kayitYeri = klasor + "/" + dosyaAdi;
+                deger.GORSELURL = kayitYeri;
+            }
+
             deger.ADSOYAD = Txtadsoyad.Text;
             deger.EGITIM = Txtegitim.Text;
             deger.ISDENEYIMLERI = Txtisdeneyim.Text;
             deger.MESLEK = Txtmeslek.Text;
-            deger.GORSELURL = Txtgorsel.Text;
             db.SaveChanges();
             Response.Redirect("Hakkimda.aspx");
         }
