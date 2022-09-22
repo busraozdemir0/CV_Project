@@ -35,16 +35,16 @@ namespace CV_Project
             if (yuklenecekDosya != null)
             {
                 FileInfo dosyaBilgisi = new FileInfo(FileUpload1.FileName);
-                string klasor = "Resimler";
 
                 string dosyaAdi = dosyaBilgisi.Name.Substring(0, dosyaBilgisi.Name.Length - dosyaBilgisi.Extension.Length);
                 dosyaAdi += "-" + Guid.NewGuid().ToString().Replace("-", "") + dosyaBilgisi.Extension;
-                string yuklemeYeri = Server.MapPath("~/" + klasor + "/" + dosyaAdi);
-                FileUpload1.SaveAs(yuklemeYeri);
+                string yuklemeYeri = Server.MapPath("~/Resimler/") + dosyaAdi;
+                yuklenecekDosya.SaveAs(yuklemeYeri);
 
-                string kayitYeri = klasor + "/" + dosyaAdi;
+                string kayitYeri = "Resimler/" + dosyaAdi;
                 deger.GORSELURL = kayitYeri;
             }
+
 
             deger.ADSOYAD = Txtadsoyad.Text;
             deger.EGITIM = Txtegitim.Text;
